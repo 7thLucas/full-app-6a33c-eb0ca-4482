@@ -1,0 +1,1 @@
+build me an app to compare fashion items prices accross platforms
