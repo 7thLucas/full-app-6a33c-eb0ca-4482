@@ -1,0 +1,76 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-7">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div>
+        <span class="text-xs font-bold tracking-widest text-rose-500 uppercase">North Star Metric</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">Weekly Verified Operations</h2>
+        <p class="text-slate-500 text-sm mt-1">The single number this app lives or dies by.</p>
+      </div>
+      <span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Operation definition -->
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Verified Operation</p>
+      <p class="text-slate-900 font-bold text-base">Price comparison search completed</p>
+      <p class="text-slate-500 text-sm mt-1">A user submits a fashion item search and receives a populated cross-platform price results page. Clicks, logins, and page views are excluded — only completed searches count.</p>
+    </div>
+
+    <!-- Formula + projection -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <!-- Formula block -->
+      <div class="bg-slate-950 rounded-2xl p-6 flex flex-col gap-4">
+        <p class="text-rose-400 text-xs font-bold uppercase tracking-wider">WVO Formula</p>
+        <div class="flex flex-col gap-3 text-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Active users / week</span>
+            <span class="px-2 py-0.5 rounded-md bg-amber-500 bg-opacity-20 border border-amber-500 border-opacity-30 text-amber-300 text-xs font-semibold">Assumption — adjust this: 200</span>
+          </div>
+          <div class="w-full h-px bg-slate-700"></div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-400">Searches per user / week</span>
+            <span class="px-2 py-0.5 rounded-md bg-amber-500 bg-opacity-20 border border-amber-500 border-opacity-30 text-amber-300 text-xs font-semibold">Assumption — adjust this: 3</span>
+          </div>
+          <div class="w-full h-px bg-slate-700"></div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="text-white font-bold">Weekly Verified Operations</span>
+            <span class="text-white font-black text-xl">= 600 / wk</span>
+          </div>
+          <p class="text-slate-500 text-xs mt-1">200 users × 3 searches each = <span class="text-white font-semibold">600 WVO / week</span></p>
+        </div>
+      </div>
+
+      <!-- Value block -->
+      <div class="flex flex-col gap-4">
+        <div class="bg-rose-50 border border-rose-100 rounded-2xl p-5 flex flex-col gap-2 flex-1">
+          <p class="text-rose-600 text-xs font-bold uppercase tracking-wider">Value Per Operation</p>
+          <p class="text-slate-800 font-bold text-sm">Time saved per search</p>
+          <p class="text-slate-500 text-xs leading-relaxed">Each search replaces ~2 hrs manual effort. At a stylist's average rate of $40/hr → <span class="font-semibold text-slate-700">$80 value / operation</span>.</p>
+          <p class="text-slate-400 text-xs italic">Assumption — adjust this: $40/hr hourly rate</p>
+        </div>
+        <div class="bg-slate-900 rounded-2xl p-5 flex flex-col gap-3">
+          <p class="text-slate-400 text-xs font-bold uppercase tracking-wider">Projected Total Value</p>
+          <div class="flex gap-4 items-end">
+            <div>
+              <p class="text-white font-black text-2xl">$48K</p>
+              <p class="text-slate-500 text-xs">per week</p>
+            </div>
+            <div class="w-px h-10 bg-slate-700"></div>
+            <div>
+              <p class="text-rose-400 font-black text-2xl">$2.5M</p>
+              <p class="text-slate-500 text-xs">per year (×52)</p>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs">600 ops/wk × $80 value/op = $48,000/wk → $2,496,000/yr</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
