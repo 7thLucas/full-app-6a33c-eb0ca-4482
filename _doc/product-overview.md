@@ -16,11 +16,15 @@ A professional-grade price comparison tool built for fashion — fast, focused, 
 
 ## Core Workflow
 1. User searches for a fashion item (by name, category, or description)
-2. App surfaces prices for that item across supported platforms simultaneously
-3. User compares results and proceeds to purchase on the platform of their choice
+2. App surfaces prices from all major platforms simultaneously
+3. App highlights the platform with the **best (lowest) price** — the single clearest answer
+4. User clicks through to purchase on the winning platform
+
+## MVP Hero Feature
+**Best price finder** — the app's day-one job is to tell the user exactly which platform has the lowest price for the item they want. Not a neutral comparison table; a decisive recommendation with the data to back it up.
 
 ## Verified Operations (North Star)
-- **Price comparison search completed** — a user submits a search and receives a populated cross-platform results page
+- **Best-price search completed** — a user submits a fashion item search and receives a results page that clearly identifies the lowest-price platform
 
 ## Branding & Tone
 - Name: TBD
@@ -29,9 +33,10 @@ A professional-grade price comparison tool built for fashion — fast, focused, 
 
 ## Scope (MVP)
 - Cross-platform fashion item price lookup
+- Best price highlighted / surfaced at the top of results
 - Side-by-side price results display
 - Platform filtering or sorting by price
-- Link-out to purchase on each platform
+- Link-out to purchase on the best-price platform
 
 ## Out of Scope (MVP)
 - Payment processing within the app
