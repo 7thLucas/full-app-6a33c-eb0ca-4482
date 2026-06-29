@@ -27,7 +27,7 @@ A professional-grade price comparison tool built for fashion — fast, focused, 
 - **Best-price search completed** — a user submits a fashion item search and receives a results page that clearly identifies the lowest-price platform
 
 ## Branding & Tone
-- Name: TBD
+- Name: **Vaseyeon**
 - Tone: Clean, editorial, professional — reflects the fashion vertical without being frivolous
 - Audience: Pro and semi-pro fashion users who value speed and accuracy over novelty
 
