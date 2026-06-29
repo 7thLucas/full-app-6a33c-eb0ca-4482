@@ -17,44 +17,45 @@
     <!-- Feature cards grid -->
     <div class="grid grid-cols-3 gap-4 flex-1">
 
-      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.secondary}};">
+      <!-- Hero feature — dark card -->
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.navbarBackground}};">
         <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.primary}};">
           <svg class="w-4 h-4" style="color: {{config.brandColor.primaryForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
-        <p class="font-bold text-sm" style="color: {{config.brandColor.secondaryForeground}};">Best Price Finder</p>
-        <p class="text-xs leading-relaxed" style="color: rgba(248,250,252,0.6);">Search any fashion item — the app immediately highlights which platform has the lowest price, surfaced at the top of every results page.</p>
+        <p class="font-bold text-sm" style="color: #ffffff;">Best Price Finder</p>
+        <p class="text-xs leading-relaxed" style="color: rgba(248,250,252,0.6);">Search any fashion item — {{config.appName}} immediately highlights which platform has the lowest price, surfaced at the top of every results page.</p>
       </div>
 
       <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
-        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
-          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M7 12h10M11 18h2"/></svg>
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.muted}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M7 12h10M11 18h2"/></svg>
         </div>
         <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Sort &amp; Filter</p>
-        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Filter results by platform, price range, or category. Sort by lowest price or best match to find the right option instantly.</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Filter results by platform, price range, or category. Sort by lowest price to find the right option instantly.</p>
       </div>
 
       <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
-        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
-          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.muted}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
         </div>
         <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Side-by-Side View</p>
         <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">See every platform's price in a clean comparison layout — no more mental math or spreadsheet row-building.</p>
       </div>
 
       <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
-        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
-          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.muted}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         </div>
         <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Direct Platform Links</p>
         <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">One click sends you directly to the item on the chosen platform to complete your purchase without retracing steps.</p>
       </div>
 
       <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
-        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
-          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/></svg>
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.muted}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/></svg>
         </div>
         <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Category Browsing</p>
-        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Browse fashion categories (tops, footwear, accessories) to explore cross-platform pricing without a specific item in mind.</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Browse fashion categories — tops, footwear, accessories — to explore cross-platform pricing without a specific item in mind.</p>
       </div>
 
       <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.primary}};">
