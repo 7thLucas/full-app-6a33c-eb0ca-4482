@@ -1,72 +1,72 @@
-<section class="w-full h-full overflow-auto bg-white">
+<section class="w-full h-full overflow-auto" style="background: {{config.brandColor.background}}; font-family: {{config.font.textFont}}, sans-serif;">
   <div class="flex flex-col h-full p-12 gap-7">
 
     <!-- Header -->
     <div class="flex items-start justify-between">
       <div>
-        <span class="text-xs font-bold tracking-widest text-rose-500 uppercase">North Star Metric</span>
-        <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">Weekly Verified Operations</h2>
-        <p class="text-slate-500 text-sm mt-1">The single number this app lives or dies by.</p>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: {{config.brandColor.primary}};">North Star Metric</span>
+        <h2 class="text-3xl font-black mt-1 leading-tight" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">Weekly Verified Operations</h2>
+        <p class="text-sm mt-1" style="color: {{config.brandColor.mutedForeground}};">The single number this app lives or dies by.</p>
       </div>
-      <span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold">
+      <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: #fffbeb; border: 1px solid #fde68a; color: #92400e;">
         Projected impact — based on your inputs
       </span>
     </div>
 
     <!-- Operation definition -->
-    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
-      <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Verified Operation</p>
-      <p class="text-slate-900 font-bold text-base">Price comparison search completed</p>
-      <p class="text-slate-500 text-sm mt-1">A user submits a fashion item search and receives a populated cross-platform price results page. Clicks, logins, and page views are excluded — only completed searches count.</p>
+    <div class="rounded-2xl p-6" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+      <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color: {{config.brandColor.mutedForeground}};">Verified Operation</p>
+      <p class="font-bold text-base" style="color: {{config.brandColor.foreground}};">Price comparison search completed</p>
+      <p class="text-sm mt-1" style="color: {{config.brandColor.mutedForeground}};">A user submits a fashion item search and receives a populated cross-platform price results page. Clicks, logins, and page views are excluded — only completed searches count.</p>
     </div>
 
     <!-- Formula + projection -->
     <div class="grid grid-cols-2 gap-4 flex-1">
 
       <!-- Formula block -->
-      <div class="bg-slate-950 rounded-2xl p-6 flex flex-col gap-4">
-        <p class="text-rose-400 text-xs font-bold uppercase tracking-wider">WVO Formula</p>
+      <div class="rounded-2xl p-6 flex flex-col gap-4" style="background: {{config.brandColor.secondary}};">
+        <p class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.primary}};">WVO Formula</p>
         <div class="flex flex-col gap-3 text-sm">
           <div class="flex items-center justify-between">
-            <span class="text-slate-400">Active users / week</span>
-            <span class="px-2 py-0.5 rounded-md bg-amber-500 bg-opacity-20 border border-amber-500 border-opacity-30 text-amber-300 text-xs font-semibold">Assumption — adjust this: 200</span>
+            <span style="color: rgba(248,250,252,0.6);">Active users / week</span>
+            <span class="px-2 py-0.5 rounded-md text-xs font-semibold" style="background: rgba(245,158,11,0.2); border: 1px solid rgba(245,158,11,0.3); color: #fbbf24;">Assumption — adjust this: 200</span>
           </div>
-          <div class="w-full h-px bg-slate-700"></div>
+          <div class="w-full h-px" style="background: rgba(255,255,255,0.1);"></div>
           <div class="flex items-center justify-between">
-            <span class="text-slate-400">Searches per user / week</span>
-            <span class="px-2 py-0.5 rounded-md bg-amber-500 bg-opacity-20 border border-amber-500 border-opacity-30 text-amber-300 text-xs font-semibold">Assumption — adjust this: 3</span>
+            <span style="color: rgba(248,250,252,0.6);">Searches per user / week</span>
+            <span class="px-2 py-0.5 rounded-md text-xs font-semibold" style="background: rgba(245,158,11,0.2); border: 1px solid rgba(245,158,11,0.3); color: #fbbf24;">Assumption — adjust this: 3</span>
           </div>
-          <div class="w-full h-px bg-slate-700"></div>
+          <div class="w-full h-px" style="background: rgba(255,255,255,0.1);"></div>
           <div class="flex items-center justify-between mt-1">
-            <span class="text-white font-bold">Weekly Verified Operations</span>
-            <span class="text-white font-black text-xl">= 600 / wk</span>
+            <span class="font-bold" style="color: {{config.brandColor.secondaryForeground}};">Weekly Verified Operations</span>
+            <span class="font-black text-xl" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.secondaryForeground}};">= 600 / wk</span>
           </div>
-          <p class="text-slate-500 text-xs mt-1">200 users × 3 searches each = <span class="text-white font-semibold">600 WVO / week</span></p>
+          <p class="text-xs mt-1" style="color: rgba(248,250,252,0.5);">200 users × 3 searches each = <span style="color: {{config.brandColor.secondaryForeground}}; font-weight: 600;">600 WVO / week</span></p>
         </div>
       </div>
 
       <!-- Value block -->
       <div class="flex flex-col gap-4">
-        <div class="bg-rose-50 border border-rose-100 rounded-2xl p-5 flex flex-col gap-2 flex-1">
-          <p class="text-rose-600 text-xs font-bold uppercase tracking-wider">Value Per Operation</p>
-          <p class="text-slate-800 font-bold text-sm">Time saved per search</p>
-          <p class="text-slate-500 text-xs leading-relaxed">Each search replaces ~2 hrs manual effort. At a stylist's average rate of $40/hr → <span class="font-semibold text-slate-700">$80 value / operation</span>.</p>
-          <p class="text-slate-400 text-xs italic">Assumption — adjust this: $40/hr hourly rate</p>
+        <div class="rounded-2xl p-5 flex flex-col gap-2 flex-1" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.accentForeground}};">Value Per Operation</p>
+          <p class="font-bold text-sm" style="color: {{config.brandColor.foreground}};">Time saved per search</p>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Each search replaces ~2 hrs manual effort. At a stylist's average rate of $40/hr → <span style="font-weight: 600; color: {{config.brandColor.foreground}};">$80 value / operation</span>.</p>
+          <p class="text-xs italic" style="color: {{config.brandColor.mutedForeground}};">Assumption — adjust this: $40/hr hourly rate</p>
         </div>
-        <div class="bg-slate-900 rounded-2xl p-5 flex flex-col gap-3">
-          <p class="text-slate-400 text-xs font-bold uppercase tracking-wider">Projected Total Value</p>
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: {{config.brandColor.secondary}};">
+          <p class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.mutedForeground}};">Projected Total Value</p>
           <div class="flex gap-4 items-end">
             <div>
-              <p class="text-white font-black text-2xl">$48K</p>
-              <p class="text-slate-500 text-xs">per week</p>
+              <p class="font-black text-2xl" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.secondaryForeground}};">$48K</p>
+              <p class="text-xs" style="color: rgba(248,250,252,0.5);">per week</p>
             </div>
-            <div class="w-px h-10 bg-slate-700"></div>
+            <div class="w-px h-10" style="background: rgba(255,255,255,0.1);"></div>
             <div>
-              <p class="text-rose-400 font-black text-2xl">$2.5M</p>
-              <p class="text-slate-500 text-xs">per year (×52)</p>
+              <p class="font-black text-2xl" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.primary}};">$2.5M</p>
+              <p class="text-xs" style="color: rgba(248,250,252,0.5);">per year (×52)</p>
             </div>
           </div>
-          <p class="text-slate-500 text-xs">600 ops/wk × $80 value/op = $48,000/wk → $2,496,000/yr</p>
+          <p class="text-xs" style="color: rgba(248,250,252,0.4);">600 ops/wk × $80 value/op = $48,000/wk → $2,496,000/yr</p>
         </div>
       </div>
 
