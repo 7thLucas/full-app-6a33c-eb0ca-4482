@@ -1,72 +1,70 @@
-<section class="w-full h-full overflow-auto bg-white">
+<section class="w-full h-full overflow-auto" style="background: {{config.brandColor.background}}; font-family: {{config.font.textFont}}, sans-serif;">
   <div class="flex flex-col h-full p-12 gap-8">
 
     <!-- Header -->
     <div class="flex items-end justify-between">
       <div>
-        <span class="text-xs font-bold tracking-widest text-rose-500 uppercase">Core Features</span>
-        <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">Built for fashion professionals.</h2>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: {{config.brandColor.primary}};">Core Features</span>
+        <h2 class="text-3xl font-black mt-1 leading-tight" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">Built for fashion professionals.</h2>
       </div>
-      <!-- Persona chips -->
       <div class="flex gap-2 flex-wrap justify-end">
-        <span class="px-3 py-1.5 rounded-full bg-rose-500 text-white text-xs font-bold shadow-sm">Fashion Enthusiast</span>
-        <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-500 text-xs font-semibold">Stylist</span>
-        <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-500 text-xs font-semibold">Industry Worker</span>
+        <span class="px-3 py-1.5 rounded-full text-xs font-bold shadow-sm" style="background: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">Fashion Enthusiast</span>
+        <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">Stylist</span>
+        <span class="px-3 py-1.5 rounded-full text-xs font-semibold" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">Industry Worker</span>
       </div>
     </div>
 
     <!-- Feature cards grid -->
     <div class="grid grid-cols-3 gap-4 flex-1">
 
-      <div class="bg-slate-950 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-rose-500 flex items-center justify-center">
-          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.secondary}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.primary}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primaryForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35"/></svg>
         </div>
-        <p class="text-white font-bold text-sm">Cross-Platform Search</p>
-        <p class="text-slate-400 text-xs leading-relaxed">Search any fashion item by name and instantly receive prices from all major platforms in a single unified results page.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.secondaryForeground}};">Cross-Platform Search</p>
+        <p class="text-xs leading-relaxed" style="color: rgba(248,250,252,0.6);">Search any fashion item by name and instantly receive prices from all major platforms in a single unified results page.</p>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-rose-100 flex items-center justify-center">
-          <svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M7 12h10M11 18h2"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M7 12h10M11 18h2"/></svg>
         </div>
-        <p class="text-slate-800 font-bold text-sm">Sort &amp; Filter</p>
-        <p class="text-slate-500 text-xs leading-relaxed">Filter results by platform, price range, or category. Sort by lowest price or best match to find the right option instantly.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Sort &amp; Filter</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Filter results by platform, price range, or category. Sort by lowest price or best match to find the right option instantly.</p>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-rose-100 flex items-center justify-center">
-          <svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
         </div>
-        <p class="text-slate-800 font-bold text-sm">Side-by-Side View</p>
-        <p class="text-slate-500 text-xs leading-relaxed">See every platform's price displayed in a clean comparison layout — no more mental math or spreadsheet row-building.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Side-by-Side View</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">See every platform's price in a clean comparison layout — no more mental math or spreadsheet row-building.</p>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-rose-100 flex items-center justify-center">
-          <svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         </div>
-        <p class="text-slate-800 font-bold text-sm">Direct Platform Links</p>
-        <p class="text-slate-500 text-xs leading-relaxed">One click sends you directly to the item on the chosen platform so you can complete your purchase without retracing steps.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Direct Platform Links</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">One click sends you directly to the item on the chosen platform to complete your purchase without retracing steps.</p>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-rose-100 flex items-center justify-center">
-          <svg class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.accentForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 8a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/></svg>
         </div>
-        <p class="text-slate-800 font-bold text-sm">Category Browsing</p>
-        <p class="text-slate-500 text-xs leading-relaxed">Browse fashion categories (tops, footwear, accessories) to explore cross-platform pricing without a specific item in mind.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.cardForeground}};">Category Browsing</p>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Browse fashion categories (tops, footwear, accessories) to explore cross-platform pricing without a specific item in mind.</p>
       </div>
 
-      <div class="bg-rose-500 rounded-2xl p-6 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-white bg-opacity-20 flex items-center justify-center">
-          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.primary}};">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: rgba(255,255,255,0.2);">
+          <svg class="w-4 h-4" style="color: {{config.brandColor.primaryForeground}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </div>
-        <p class="text-white font-bold text-sm">Instant Results</p>
-        <p class="text-white text-xs leading-relaxed opacity-80">No waiting, no loading screens. Results from all platforms load in parallel so professionals can move fast.</p>
+        <p class="font-bold text-sm" style="color: {{config.brandColor.primaryForeground}};">Instant Results</p>
+        <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.8);">No waiting, no loading screens. Results from all platforms load in parallel so professionals can move fast.</p>
       </div>
 
     </div>
-
   </div>
 </section>
