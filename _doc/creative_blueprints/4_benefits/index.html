@@ -1,50 +1,50 @@
-<section class="w-full h-full overflow-auto bg-white">
+<section class="w-full h-full overflow-auto" style="background: {{config.brandColor.background}}; font-family: {{config.font.textFont}}, sans-serif;">
   <div class="flex flex-col h-full p-12 gap-8">
 
     <!-- Header -->
     <div>
-      <span class="text-xs font-bold tracking-widest text-rose-500 uppercase">Why It Matters</span>
-      <h2 class="text-3xl font-black text-slate-900 mt-1 leading-tight">Real outcomes for fashion professionals.</h2>
+      <span class="text-xs font-bold tracking-widest uppercase" style="color: {{config.brandColor.primary}};">Why It Matters</span>
+      <h2 class="text-3xl font-black mt-1 leading-tight" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">Real outcomes for fashion professionals.</h2>
     </div>
 
     <!-- Metric cards -->
     <div class="grid grid-cols-3 gap-4">
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-        <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Time Saved</span>
-        <span class="text-3xl font-black text-slate-900">2+ hrs</span>
-        <span class="text-slate-500 text-xs leading-relaxed">Eliminated per sourcing session — no more manual tab-switching and spreadsheet building across platforms.</span>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.primary}};">Time Saved</span>
+        <span class="text-3xl font-black" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">2+ hrs</span>
+        <span class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Eliminated per sourcing session — no more manual tab-switching and spreadsheet building across platforms.</span>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-        <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Platforms Covered</span>
-        <span class="text-3xl font-black text-slate-900">10+</span>
-        <span class="text-slate-500 text-xs leading-relaxed">Major fashion platforms compared in a single search — from fast fashion to premium retailers.</span>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.primary}};">Platforms Covered</span>
+        <span class="text-3xl font-black" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">10+</span>
+        <span class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Major fashion platforms compared in a single search — from fast fashion to premium retailers.</span>
       </div>
 
-      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-        <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Search Speed</span>
-        <span class="text-3xl font-black text-slate-900">&lt; 5s</span>
-        <span class="text-slate-500 text-xs leading-relaxed">Cross-platform results surfaced in seconds — price intel at the speed professionals actually work.</span>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-xs font-bold uppercase tracking-wider" style="color: {{config.brandColor.primary}};">Search Speed</span>
+        <span class="text-3xl font-black" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">&lt; 5s</span>
+        <span class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Cross-platform results surfaced in seconds — price intel at the speed professionals actually work.</span>
       </div>
 
     </div>
 
     <!-- ROI summary block -->
-    <div class="flex-1 bg-slate-950 rounded-2xl p-8 flex gap-8 items-center">
+    <div class="flex-1 rounded-2xl p-8 flex gap-8 items-center" style="background: {{config.brandColor.secondary}};">
       <div class="flex-1">
-        <p class="text-rose-400 text-xs font-bold uppercase tracking-widest mb-3">The Professional Advantage</p>
-        <h3 class="text-white font-black text-xl leading-snug mb-4">From hours of manual research to instant, confident price decisions.</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Stylists spend less time on research and more time with clients. Fashion buyers move faster on sourcing decisions. Enthusiasts always know they're getting the best available price — without building a spreadsheet to prove it.</p>
+        <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: {{config.brandColor.primary}};">The Professional Advantage</p>
+        <h3 class="font-black text-xl leading-snug mb-4" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.secondaryForeground}};">From hours of manual research to instant, confident price decisions.</h3>
+        <p class="text-sm leading-relaxed" style="color: rgba(248,250,252,0.6);">Stylists spend less time on research and more time with clients. Fashion buyers move faster on sourcing decisions. Enthusiasts always know they're getting the best available price — without building a spreadsheet to prove it.</p>
       </div>
       <div class="flex flex-col gap-3 min-w-fit">
-        <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl px-5 py-4 text-center">
-          <p class="text-white font-black text-2xl">100%</p>
-          <p class="text-slate-400 text-xs mt-0.5">spreadsheet-free workflow</p>
+        <div class="rounded-xl px-5 py-4 text-center" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+          <p class="font-black text-2xl" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.secondaryForeground}};">100%</p>
+          <p class="text-xs mt-0.5" style="color: rgba(248,250,252,0.5);">spreadsheet-free workflow</p>
         </div>
-        <div class="bg-rose-500 rounded-xl px-5 py-4 text-center">
-          <p class="text-white font-black text-2xl">1 search</p>
-          <p class="text-white text-xs mt-0.5 opacity-80">replaces platform-hopping</p>
+        <div class="rounded-xl px-5 py-4 text-center" style="background: {{config.brandColor.primary}};">
+          <p class="font-black text-2xl" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.primaryForeground}};">1 search</p>
+          <p class="text-xs mt-0.5" style="color: rgba(255,255,255,0.8);">replaces platform-hopping</p>
         </div>
       </div>
     </div>
