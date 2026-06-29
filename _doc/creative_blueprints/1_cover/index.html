@@ -13,17 +13,21 @@
     <!-- Content column -->
     <div class="sl-content flex flex-col justify-between p-12" style="background: {{config.brandColor.background}};">
       <div>
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-8" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-8" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
           <span class="w-1.5 h-1.5 rounded-full" style="background: {{config.brandColor.primary}};"></span>
-          <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.accentForeground}};">Fashion Tech</span>
+          <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.primary}};">Fashion Tech</span>
         </div>
 
-        <h1 class="font-black leading-none tracking-tight mb-6" style="font-family: {{config.font.headingFont}}, serif; font-size: clamp(2rem, 5vw, 3.5rem); color: {{config.brandColor.foreground}};">
-          Search Once.<br/>
-          <span style="color: {{config.brandColor.primary}};">Get the Best Price.</span>
+        <h1 class="font-black leading-none tracking-tight mb-3" style="font-family: {{config.font.headingFont}}, serif; font-size: clamp(2.5rem, 5vw, 4rem); color: {{config.brandColor.primary}};">
+          {{config.appName}}
         </h1>
 
-        <p class="font-normal leading-relaxed max-w-sm" style="color: {{config.brandColor.mutedForeground}}; font-size: clamp(0.875rem, 1.5vw, 1.125rem);">
+        <h2 class="font-black leading-tight mb-6" style="font-family: {{config.font.headingFont}}, serif; font-size: clamp(1.25rem, 2.5vw, 1.75rem); color: {{config.brandColor.foreground}};">
+          Search Once.<br/>
+          <span style="color: {{config.brandColor.primary}};">Get the Best Price.</span>
+        </h2>
+
+        <p class="font-normal leading-relaxed max-w-sm" style="color: {{config.brandColor.mutedForeground}}; font-size: clamp(0.875rem, 1.4vw, 1rem);">
           A professional fashion price tool for enthusiasts, stylists, and industry workers — search any item and instantly know which platform has the lowest price. No tabs. No spreadsheets.
         </p>
       </div>
@@ -35,7 +39,7 @@
     </div>
 
     <!-- Visual column -->
-    <div class="sl-visual relative overflow-hidden" style="background: {{config.brandColor.secondary}};">
+    <div class="sl-visual relative overflow-hidden" style="background: {{config.brandColor.navbarBackground}};">
       <img
         src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=editorial%20fashion%20flat%20lay%20clothing%20items%20price%20tags%20multiple%20brand%20labels%20minimalist%20studio%20dark%20background%20professional%20photography"
         alt="Fashion price comparison visual"
