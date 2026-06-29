@@ -65,6 +65,10 @@ export default {
           ring: "var(--sidebar-ring)",
         },
       },
+      fontFamily: {
+        heading: ["'Playfair Display'", "Georgia", "serif"],
+        sans: ["'DM Sans'", "Inter", "sans-serif"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

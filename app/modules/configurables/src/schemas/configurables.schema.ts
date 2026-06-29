@@ -40,10 +40,64 @@ export const configurableSchemas: ConfigurableSchemas = {
       label: "App Name",
     },
     {
+      fieldName: "appTagline",
+      type: "string",
+      required: false,
+      label: "App Tagline",
+    },
+    {
       fieldName: "logoUrl",
       type: "url",
       required: true,
       label: "Logo URL",
+    },
+    {
+      fieldName: "heroHeading",
+      type: "string",
+      required: false,
+      label: "Hero Heading",
+    },
+    {
+      fieldName: "heroSubheading",
+      type: "string",
+      required: false,
+      label: "Hero Subheading",
+    },
+    {
+      fieldName: "searchPlaceholder",
+      type: "string",
+      required: false,
+      label: "Search Placeholder",
+    },
+    {
+      fieldName: "heroCtaLabel",
+      type: "string",
+      required: false,
+      label: "Hero CTA Button Label",
+    },
+    {
+      fieldName: "featuredCategories",
+      type: "array",
+      label: "Featured Categories",
+      item: { type: "string", required: true },
+    },
+    {
+      fieldName: "supportedPlatforms",
+      type: "array",
+      label: "Supported Platforms",
+      item: {
+        type: "object",
+        fields: [
+          { fieldName: "name", type: "string", required: true, label: "Platform Name" },
+          { fieldName: "color", type: "color", required: false, label: "Platform Color" },
+        ],
+      },
+    },
+    {
+      fieldName: "footerText",
+      type: "string",
+      required: false,
+      label: "Footer Text",
     },
     {
       fieldName: "brandColor",

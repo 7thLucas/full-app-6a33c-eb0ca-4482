@@ -3,6 +3,7 @@ import { readdir } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { Router } from "express";
 import { createLogger } from "~/lib/logger";
+import priceSearchRoutes from "~/price-comparison/api/price-search.routes";
 
 type RouteModule = {
   default?: ReturnType<typeof Router>;
@@ -61,5 +62,8 @@ async function registerModuleRoutes(): Promise<void> {
 }
 
 await registerModuleRoutes();
+
+// Price comparison routes
+router.use(priceSearchRoutes);
 
 export default router;

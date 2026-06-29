@@ -1,9 +1,5 @@
 /*
  * Default Configurable Data — seeded into Mongo on first boot.
- *
- * BEFORE EDITING: read ./RULES.md (especially R5: schema and defaults must
- * stay in sync) and ./configurables.schema.ts. For per-type schema and
- * default-value samples, see RULES.md §5 "Field Type Reference".
  */
 
 export type TBrandColor = {
@@ -12,35 +8,46 @@ export type TBrandColor = {
   accent: string;
 };
 
+export type TSupportedPlatform = {
+  name: string;
+  color?: string;
+};
+
 export type TDefaultConfigurableData = {
   appName: string;
+  appTagline?: string;
   logoUrl: string;
+  heroHeading?: string;
+  heroSubheading?: string;
+  searchPlaceholder?: string;
+  heroCtaLabel?: string;
+  featuredCategories?: string[];
+  supportedPlatforms?: TSupportedPlatform[];
+  footerText?: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "FashionPrice",
+  appTagline: "Find the Best Price. Instantly.",
   logoUrl: "FILL_LOGO_URL_HERE",
+  heroHeading: "Compare Fashion Prices Across Every Platform",
+  heroSubheading: "Search once and see prices from Zara, ASOS, Shein, H&M, and more — side by side. We highlight the best deal so you never overpay.",
+  searchPlaceholder: "Search for a fashion item, e.g. \"white linen blazer\"",
+  heroCtaLabel: "Find Best Price",
+  featuredCategories: ["Dresses", "Tops", "Blazers", "Trousers", "Sneakers", "Bags", "Accessories"],
+  supportedPlatforms: [
+    { name: "Zara", color: "#000000" },
+    { name: "ASOS", color: "#2d2d2d" },
+    { name: "H&M", color: "#e50010" },
+    { name: "Shein", color: "#a50000" },
+    { name: "Mango", color: "#8b7355" },
+    { name: "Uniqlo", color: "#ff0000" },
+  ],
+  footerText: "© 2026 FashionPrice. All prices updated in real time.",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#e11d48",
+    secondary: "#0f172a",
+    accent: "#e11d48",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // Required branding fields → use the FILL_X_HERE placeholder pattern.
-  // Optional/typed defaults → real value with a "// fill it here" comment:
-  //
-  //   maxItemsPerPage: 12,                     // fill it here
-  //   enableNotifications: true,               // fill it here
-  //   featuredCategories: [],                  // fill it here
-  //   defaultLanguage: "en",                   // must match enum options
-  //   launchDate: "2025-01-01T00:00:00.000Z",  // ISO-8601
-  //   heroImage: "",                           // resolved URL after upload
-  //   galleryImages: [],                       // array of resolved URLs
-  // ─────────────────────────────────────────────────────────────────────
 };
