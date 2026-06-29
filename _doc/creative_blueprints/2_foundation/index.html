@@ -7,56 +7,54 @@
   .mode-portrait .sl-right { width: 100%; min-height: 280px; }
 </style>
 
-<section class="w-full h-full overflow-auto bg-white">
+<section class="w-full h-full overflow-auto" style="background: {{config.brandColor.background}}; font-family: {{config.font.textFont}}, sans-serif;">
   <div class="sl-layout flex h-full">
 
     <!-- Problem / Solution column -->
     <div class="sl-left flex flex-col justify-center p-12 gap-10">
 
-      <!-- Header -->
       <div>
-        <span class="text-xs font-bold tracking-widest text-rose-500 uppercase">The Gap in the Market</span>
-        <h2 class="text-3xl font-black text-slate-900 mt-2 leading-tight">Fashion pricing is broken<br/>for professionals.</h2>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: {{config.brandColor.primary}};">The Gap in the Market</span>
+        <h2 class="text-3xl font-black mt-2 leading-tight" style="font-family: {{config.font.headingFont}}, serif; color: {{config.brandColor.foreground}};">Fashion pricing is broken<br/>for professionals.</h2>
       </div>
 
       <!-- Problem block -->
       <div class="flex gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-rose-100 flex items-center justify-center">
-          <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+          <svg class="w-5 h-5" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </div>
         <div>
-          <p class="font-bold text-slate-800 text-sm mb-1">The Problem</p>
-          <p class="text-slate-500 text-sm leading-relaxed">Fashion enthusiasts, stylists, and industry workers must visit every platform individually — Zara, ASOS, Shein, H&amp;M — then manually collate prices into a spreadsheet. Hours of work, constant tab-switching, and still no guarantee they found the best price.</p>
+          <p class="font-bold text-sm mb-1" style="color: {{config.brandColor.foreground}};">The Problem</p>
+          <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Fashion enthusiasts, stylists, and industry workers must visit every platform individually — Zara, ASOS, Shein, H&amp;M — then manually collate prices into a spreadsheet. Hours of work, constant tab-switching, and still no guarantee they found the best price.</p>
         </div>
       </div>
 
-      <!-- Divider -->
-      <div class="w-full h-px bg-slate-100"></div>
+      <div class="w-full h-px" style="background: {{config.brandColor.border}};"></div>
 
       <!-- Solution block -->
       <div class="flex gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
-          <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background: #d1fae5;">
+          <svg class="w-5 h-5" style="color: #059669;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
         </div>
         <div>
-          <p class="font-bold text-slate-800 text-sm mb-1">The Solution</p>
-          <p class="text-slate-500 text-sm leading-relaxed">One search surfaces prices from every major fashion platform side by side — instantly. No spreadsheets, no tab-hopping. Fashion professionals get the cross-platform price intel they need in seconds, not hours.</p>
+          <p class="font-bold text-sm mb-1" style="color: {{config.brandColor.foreground}};">The Solution</p>
+          <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">One search surfaces prices from every major fashion platform side by side — instantly. No spreadsheets, no tab-hopping. Fashion professionals get the cross-platform price intel they need in seconds, not hours.</p>
         </div>
       </div>
 
     </div>
 
     <!-- Visual column -->
-    <div class="sl-right relative overflow-hidden bg-slate-900">
+    <div class="sl-right relative overflow-hidden" style="background: {{config.brandColor.secondary}};">
       <img
         src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=frustrated%20person%20at%20desk%20with%20multiple%20browser%20tabs%20open%20fashion%20shopping%20websites%20spreadsheet%20overwhelmed%20dark%20moody%20cinematic"
         alt="The manual price comparison problem"
         class="w-full h-full object-cover opacity-60"
       />
       <div class="absolute inset-0 flex flex-col justify-end p-8">
-        <div class="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-xl p-4">
-          <p class="text-white text-xs font-medium opacity-70 mb-1">Current reality for fashion professionals</p>
-          <p class="text-white font-bold text-lg leading-tight">"I spend 2+ hours just comparing prices before recommending a piece to a client."</p>
+        <div class="rounded-xl p-4" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+          <p class="text-xs font-medium mb-1" style="color: rgba(255,255,255,0.7);">Current reality for fashion professionals</p>
+          <p class="font-bold text-lg leading-tight" style="color: #ffffff;">"I spend 2+ hours just comparing prices before recommending a piece to a client."</p>
         </div>
       </div>
     </div>
