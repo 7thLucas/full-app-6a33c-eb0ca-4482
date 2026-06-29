@@ -20,7 +20,7 @@
 
       <!-- Problem block -->
       <div class="flex gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.accent}};">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.muted}};">
           <svg class="w-5 h-5" style="color: {{config.brandColor.primary}};" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </div>
         <div>
@@ -38,14 +38,14 @@
         </div>
         <div>
           <p class="font-bold text-sm mb-1" style="color: {{config.brandColor.foreground}};">The Solution</p>
-          <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Search once — get a decisive answer. The app scans every major fashion platform and surfaces the lowest price at the top, instantly. No tabs, no spreadsheets, no second-guessing.</p>
+          <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">{{config.appName}} — search once, get a decisive answer. Scans every major fashion platform and surfaces the lowest price at the top, instantly. No tabs, no spreadsheets, no second-guessing.</p>
         </div>
       </div>
 
     </div>
 
     <!-- Visual column -->
-    <div class="sl-right relative overflow-hidden" style="background: {{config.brandColor.secondary}};">
+    <div class="sl-right relative overflow-hidden" style="background: {{config.brandColor.navbarBackground}};">
       <img
         src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=frustrated%20person%20at%20desk%20with%20multiple%20browser%20tabs%20open%20fashion%20shopping%20websites%20spreadsheet%20overwhelmed%20dark%20moody%20cinematic"
         alt="The manual price comparison problem"
